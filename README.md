@@ -15,7 +15,7 @@ PyAutoBrighyness is a very simple "Calise like" program, wrote in python 3, desi
   ```
   #pacman -S python-numpy on Arch Linux)
   ```
-   - it's used to make statistical treatments to get a good result from various pictures values (the average brigtness of the pictures). It's also used to interpolate an equation based on the data the user recover from runing pyautobrightness --calibrate
+   - it's used to make statistical treatments to get a good and trusty result from various pictures values (the average brigtness of the pictures). It's also used to interpolate an equation based on the data the user recover from runing pyautobrightness --calibrate
    
   * Xorg Xbacklight 
   ```
@@ -26,7 +26,7 @@ PyAutoBrighyness is a very simple "Calise like" program, wrote in python 3, desi
 #Instalation
 - By the time being the instalation has to be manual. Copy configure.py to the folder /home/$USER/.config/autobrighness/. After that, run "py-auto-brightness.py" manually.
 - In the first run you'll have to calibrate and enter some options, after this just run py-auto-brightness.py with no argument and the program will automatically set your brightmess (YEAH, CRONTAP IT BRO!)
-- TIP: run py-auto-brightness.py -calibrate in various light conditions, the more you run it, the more data the program will have to better select a confy brightness value.
+- TIP: run py-auto-brightness.py --calibrate in various light conditions, the more you run it, the more data the program will have to better select a confy brightness value.
 
 #Commented conf file
 
