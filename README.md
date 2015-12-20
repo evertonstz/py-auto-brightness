@@ -68,3 +68,8 @@ x = 8.0,64.0
 y = 55.0,98.0
 ```
 Those are the the numbers that are stored when the user run this program with the --calibrate argument, they are used to interpolate an equation in the script with Numpy's help. The more, the better. Try to not change it manually, unless you know what you're doing. If the software is setting strange brightness you can run "pyautobrightness --calibrate reset" to clean all your calibrations
+
+#TODO
+-clean a lot of code
+-use the standard deviation to refuse an reading
+-some arguments (-help)
