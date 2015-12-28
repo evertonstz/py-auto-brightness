@@ -2,24 +2,25 @@
 PyAutoBrighyness is a very simple "Calise like" program, wrote in python 3, designed to change the screen brightness using the webcam as "light sensor".
 
 #Version
+0.2 - added help and some arguments. Also some changes to add the package into pypi.  
 
 0.1 - the first version is a mess, but It works. My only focus in this version was to get the math to work, and it does quite well 
 ##dependences##
   * Python Pygame 
   ```
-  python-pygame-hg on Arch's AUR)
+  python-pygame-hg on Arch's AUR
   ```
    - it's used only oontrol the webcam.
    
   * Python Numpy 
   ```
-  #pacman -S python-numpy on Arch Linux)
+  #pacman -S python-numpy on Arch's Extra
   ```
    - it's used to make statistical treatments to get a good and trusty result from various pictures values (the average brigtness of the pictures). It's also used to interpolate an equation based on the data the user recover from runing pyautobrightness --calibrate
    
   * Xorg Xbacklight 
   ```
-  #pacman -S xorg-xbacklight
+  #pacman -S xorg-xbacklight on Arch's Extra
   ```
    - it's used to actually change the screen brightness.
    
@@ -70,6 +71,4 @@ y = 55.0,98.0
 Those are the the numbers that are stored when the user run this program with the --calibrate argument, they are used to interpolate an equation in the script with Numpy's help. The more, the better. Try to not change it manually, unless you know what you're doing. If the software is setting strange brightness you can run "pyautobrightness --calibrate reset" to clean all your calibrations
 
 #TODO
--clean a lot of code
--use the standard deviation to refuse an reading
--some arguments (-help)
+-add the "odd" option to fix odd values in the stored calibrations
