@@ -1,4 +1,4 @@
-# py-auto-brightness 0.1
+# py-auto-brightness
 PyAutoBrighyness is a very simple "Calise like" program, wrote in python 3, designed to change the screen brightness using the webcam as "light sensor".
 
 #Version
