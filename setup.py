@@ -10,7 +10,7 @@ setup(
     keywords=['Brightness', 'Auto', 'Webcam'],
     url='https://github.com/evertonstz/py-auto-brightness',
     platforms='Unix',
-    #download_url='https://codeload.github.com/tntcrowd/submarine/legacy.tar.gz/master',
+    download_url='https://github.com/evertonstz/py-auto-brightness/tarball/0.2'
     license='GNU',
     description='Python 3 very simple ""Calise like" program to change the screen brightness based on pictures from the webcam.',
     install_requires=[],
