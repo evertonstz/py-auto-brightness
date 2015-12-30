@@ -1,15 +1,8 @@
-# py-auto-brightness
-PyAutoBrighyness is a very simple "Calise like" program, wrote in python 3, designed to change the screen brightness using the webcam as "light sensor".
+# pyautobrightness
+Pyautobrightness is a very simple "Calise like" program, wrote in python 3, designed to change the screen brightness using the webcam as "light sensor".
 
 # Installation
- ```
-pip install pyautobrightnes
-```
-#Version
-0.2 - added help and some arguments. Also some changes to add the package into pypi.  
-
-0.1 - the first version is a mess, but It works. My only focus in this version was to get the math to work, and it does quite well 
-##dependences##
+To use pyautobrightness first of all you have to install the dependences bellow:
   * Python Pygame 
   ```
   python-pygame-hg on Arch's AUR
@@ -27,11 +20,13 @@ pip install pyautobrightnes
   #pacman -S xorg-xbacklight on Arch's Extra
   ```
    - it's used to actually change the screen brightness.
-   
-#Instalation
-- By the time being the instalation has to be manual. Copy configure.py to the folder /home/$USER/.config/autobrighness/. After that, run "py-auto-brightness.py" manually.
-- In the first run you'll have to calibrate and enter some options, after this just run py-auto-brightness.py with no argument and the program will automatically set your brightmess (YEAH, CRONTAP IT BRO!)
-- TIP: run py-auto-brightness.py --calibrate in various light conditions, the more you run it, the more data the program will have to better select a confy brightness value.
+
+  After you have all set up, you can actually install pyautobrightness using pip:
+	```
+	pip install pyautobrightness
+	```
+	- In the first run you'll have to calibrate and enter some options, after this just run py-auto-brightness.py with no argument and the program will automatically set your brightmess (YEAH, CRONTAP IT BRO!)
+	- TIP: run py-auto-brightness.py --calibrate in various light conditions, the more you run it, the more data the program will have to better select a confy brightness value.
 
 #Commented conf file
 
@@ -73,6 +68,12 @@ x = 8.0,64.0
 y = 55.0,98.0
 ```
 Those are the the numbers that are stored when the user run this program with the --calibrate argument, they are used to interpolate an equation in the script with Numpy's help. The more, the better. Try to not change it manually, unless you know what you're doing. If the software is setting strange brightness you can run "pyautobrightness --calibrate reset" to clean all your calibrations
+
+
+#Changelog
+0.2 - added help and some arguments. Also some changes to add the package into pypi.  
+
+0.1 - the first version is a mess, but It works. My only focus in this version was to get the math to work, and it does quite well 
 
 #TODO
 -add the "odd" option to fix odd values in the stored calibrations
