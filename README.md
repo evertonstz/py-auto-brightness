@@ -25,8 +25,10 @@ To use pyautobrightness first of all you have to install the dependences bellow:
 	```
 	pip install pyautobrightness
 	```
-	- In the first run you'll have to calibrate and enter some options, after this just run py-auto-brightness.py with no argument and the program will automatically set your brightmess (YEAH, CRONTAP IT BRO!)
-	- TIP: run py-auto-brightness.py --calibrate in various light conditions, the more you run it, the more data the program will have to better select a confy brightness value.
+
+	In the first run you'll have to calibrate and enter some options, after this just run py-auto-brightness.py with no argument and the program will automatically set your brightmess (YEAH, CRONTAP IT BRO!)  
+
+	TIP: run py-auto-brightness.py --calibrate in various light conditions, the more you run it, the more data the program will have to better select a confy brightness value.
 
 #Commented conf file
 
