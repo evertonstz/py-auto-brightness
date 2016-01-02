@@ -10,8 +10,8 @@ setup(
     keywords=['Brightness', 'Auto', 'Webcam'],
     url='https://github.com/evertonstz/py-auto-brightness',
     platforms='Unix',
-    download_url='https://github.com/evertonstz/py-auto-brightness/tarball/0.2',
-    license='GNU',
+    download_url='https://github.com/evertonstz/py-auto-brightness/tarball/'+__version__,
+    license='GPL',
     description='A very simple software to change the screen brightness using a webcam as light sensor.',
     entry_points={'console_scripts': ['pyautobrightness = pyautobrightness.pyautobrightnessmain:main']}
 )
