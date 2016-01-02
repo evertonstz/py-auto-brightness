@@ -2,6 +2,10 @@
 Pyautobrightness is a very simple "Calise like" program, wrote in python 3, designed to change the screen brightness using the webcam as "light sensor".
 
 # Installation
+On Arch Linux:
+```
+yaourt pyautobrightness
+```
 To use pyautobrightness first of all you have to install the dependences bellow:
   * Python Pygame 
   ```
