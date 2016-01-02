@@ -1,4 +1,4 @@
-from distutils.core import setup
+from setuptools import setup
 from pyautobrightness import __version__
 
 setup(
@@ -13,5 +13,5 @@ setup(
     download_url='https://github.com/evertonstz/py-auto-brightness/tarball/0.2',
     license='GNU',
     description='A very simple software to change the screen brightness using a webcam as light sensor.',
-    entry_points={'console_scripts': ['pyautobrightness = pyautobrightness.pyautobrightnessmain:main']},
+    entry_points={'console_scripts': ['pyautobrightness = pyautobrightness.pyautobrightnessmain:main']}
 )
