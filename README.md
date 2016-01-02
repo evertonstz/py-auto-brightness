@@ -6,12 +6,13 @@ On Arch Linux:
 ```
 yaourt pyautobrightness
 ```
+Or with PYPI:
 To use pyautobrightness first of all you have to install the dependences bellow:
   * Python Pygame 
   ```
   python-pygame-hg on Arch's AUR
   ```
-   - it's used only oontrol the webcam.
+   - it's used only control the webcam.
    
   * Python Numpy 
   ```
