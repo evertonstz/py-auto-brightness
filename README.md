@@ -6,7 +6,7 @@ On Arch Linux:
 ```
 yaourt pyautobrightness
 ```
-Or with PYPI:
+Or with PYPI:   
 To use pyautobrightness first of all you have to install the dependences bellow:
   * Python Pygame 
   ```
