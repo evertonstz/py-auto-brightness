@@ -22,7 +22,7 @@ To use pyautobrightness first of all you have to install the dependences bellow:
  
   * Python Pillow 
   ```
-  #pacman -S pithon-pillow
+  #pacman -S python-pillow
   ```
    - used to measure the image brightness
  
