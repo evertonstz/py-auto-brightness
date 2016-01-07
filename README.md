@@ -19,7 +19,13 @@ To use pyautobrightness first of all you have to install the dependences bellow:
   #pacman -S python-numpy on Arch's Extra
   ```
    - it's used to make statistical treatments to get a good and trusty result from various pictures values (the average brigtness of the pictures). It's also used to interpolate an equation based on the data the user recover from runing pyautobrightness --calibrate
-   
+ 
+  * Python Pillow 
+  ```
+  #pacman -S pithon-pillow
+  ```
+   - used to measure the image brightness
+ 
   * Xorg Xbacklight 
   ```
   #pacman -S xorg-xbacklight on Arch's Extra
