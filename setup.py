@@ -1,5 +1,11 @@
 from setuptools import setup
 from pyautobrightness import __version__
+from os import name
+
+if name == "nt":
+    Dependencies = ['numpy', 'WMI', 'Pillow']
+else:
+    Dependencies = ['numpy', 'Pillow']
 
 setup(
     name='pyautobrightness',
@@ -12,6 +18,7 @@ setup(
     platforms='Unix',
     download_url='https://github.com/evertonstz/py-auto-brightness/tarball/'+__version__,
     license='GPL',
-    description='A very simple software to change the screen brightness using a webcam as light sensor.',
-    entry_points={'console_scripts': ['pyautobrightness = pyautobrightness.pyautobrightnessmain:main']}
+    description='A very simple software to change the screen brightness using a webcam as a pseudo light sensor.',
+    entry_points={'console_scripts': ['pyautobrightness = pyautobrightness.pyautobrightnessmain:main']},
+    install_requires=Dependencies,
 )
